@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+/* 1. Definir los Keyframes (el movimiento) */
+@keyframes slide-animation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Mueve exactamente el ancho de los slides originales */
+        transform: translateX(-50%); 
+    }
+}
+
+/* 2. Definir la Clase de Animación (la velocidad y el bucle) */
+.animate-infinite-slide {
+    /* 40s es la duración, linear para velocidad constante, infinite para el bucle */
+    animation: slide-animation 40s linear infinite; 
+}
+@theme {
+  --font-league-spartan: "League Spartan", sans-serif;
+  --font-jetBrains-mono: "JetBrains Mono", monospace;
+  --font-space-mono: "Space Mono", monospace; 
+}
